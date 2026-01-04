@@ -119,7 +119,7 @@ export default function ChatPage() {
     // Optimistic update
     const tempUserMessage: Message = {
       id: 'temp-user',
-      conversation_id: activeConversationId,
+      conversation_id: activeConversationId as string,
       role: 'user',
       content: userMessage,
       flagged_crisis: false,
